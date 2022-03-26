@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+}
+
+.header {
+    height: 100vh;
+    width:100vw;
+    padding: 0 8%;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48 px 0;
+}
+
+
+.logo {
+    width: 290px;
+    margin-right: 40px;
+}
+
+.nav-links {
+    padding: 48px 0;
+}
+
+.nav-links li {
+    display:inline-block;
+    margin: 0, 75px;
+    font-size: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 60px;
+    padding-left: 30px;
+    margin: 5px;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom:0;
+    left:30px;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width:50%;
+}
+
+.btn{
+    background: #ff3d00;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    border-radius: 6px; 
+    cursor: pointer;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.content h1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.content form{
+    background: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    display:flex;
+}
+
+.content form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.content form button{
+    background: #ff3d00;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.category-list{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.category{
+    width: 80px;
+    height: 80px;
+    background: rgba(255,61,0,0.15);
+    margin: 0 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.category img {
+    width: 55px;
+    margin-bottom: 5px;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index:-100;
+}
